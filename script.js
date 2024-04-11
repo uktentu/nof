@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const dateSelector = document.getElementById('dateSelector');
 
     // Set the placeholder of the date input to today's date
-    const today = new Date();
+    let today = new Date();
     const todayString = today.toISOString().split('T')[0];
     dateSelector.value = todayString;
 
